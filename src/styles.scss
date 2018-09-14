@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100vh;
+  margin: 0;
+
+  font-family: "Helvetica", sans-serif;
+}
+
+@import "~@angular/material/theming";
+
+@mixin app-body-theme($theme){
+  &, .theme-background {
+    background-color: map-get(map-get($theme, background), background);
+  }
+}
+
+
+/** configure angular meterial and activate the theme */
+@include mat-core();
+
+$default-theme: mat-light-theme(mat-palette($mat-blue), mat-palette($mat-pink), mat-palette($mat-red));
+@include angular-material-theme($default-theme);
+
+body {
+  @include app-body-theme($default-theme);
+}
+

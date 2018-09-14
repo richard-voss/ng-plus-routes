@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  padding: 3rem 3rem;
+  flex-flow: row wrap;
+
+  mat-card {
+    flex-grow: 1;
+  }
+}
