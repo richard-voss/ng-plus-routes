@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MatCardModule, MatIconModule } from '@angular/material';
+import { RandomStatementComponent } from './random-statement/random-statement.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RandomStatementComponent
   ],
   imports: [
     BrowserModule,
