@@ -1,7 +1,7 @@
 <mat-card>
   <h1>Welcome to Routes</h1>
 
-  <p>
-    Let's do some URL magic.
+  <p *ngIf="greet">
+    How's it going, {{greet}}?
   </p>
 </mat-card>

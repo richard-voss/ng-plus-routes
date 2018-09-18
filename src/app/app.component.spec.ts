@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { MockComponent } from 'ng-mocks';
 import { MatCard } from '@angular/material';
 import { By } from '@angular/platform-browser';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -11,6 +12,7 @@ describe('AppComponent', () => {
         AppComponent,
         MockComponent(MatCard)
       ],
+      imports: [RouterTestingModule]
     }).compileComponents();
   }));
 
