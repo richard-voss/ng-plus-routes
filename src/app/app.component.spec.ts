@@ -26,6 +26,6 @@ describe('AppComponent', () => {
   it('should show card with headline', async(() => {
     const headline = fixture.debugElement.query(By.css('mat-card h1'));
     expect(headline).toBeTruthy();
-    expect(headline.nativeElement.textContent).toContain('Welcome');
+    expect(headline.nativeElement.textContent).toContain('Routes');
   }));
 });

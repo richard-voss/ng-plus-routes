@@ -1,6 +1,6 @@
-# ng + Reactive Forms
+# ng + Routing
 
-A small sample project for using Reactive Forms.
+A small sample project for using Angular Routes.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
