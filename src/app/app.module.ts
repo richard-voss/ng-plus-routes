@@ -8,13 +8,13 @@ import { RandomStatementComponent } from './random-statement/random-statement.co
 import { RandomGifComponent } from './random-gif/random-gif.component';
 import { SafePipe } from './safe.pipe';
 import { WisePersonComponent } from './wise-person/wise-person.component';
-import { LandscapeComponent } from './landscape/landscape.component';
+import { RandomImageComponent } from './landscape/random-image.component';
 
 
 const adviceChildren: Routes = [
   { path: 'person', component: WisePersonComponent },
   {
-    path: 'landscape', component: LandscapeComponent, data: {
+    path: 'landscape', component: RandomImageComponent, data: {
       images: [
         'https://www.maxpixel.net/static/photo/2x/Flow-Calming-Waterfall-Nature-Water-Bach-Forest-746108.jpg',
         'https://www.maxpixel.net/static/photo/640/Cascade-Blur-Forest-Blurred-Fall-Flow-Flowing-21653.jpg',
@@ -32,7 +32,7 @@ const adviceChildren: Routes = [
     RandomGifComponent,
     SafePipe,
     WisePersonComponent,
-    LandscapeComponent
+    RandomImageComponent
   ],
   imports: [
     RouterModule.forRoot([

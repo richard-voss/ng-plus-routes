@@ -1,23 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LandscapeComponent } from './landscape.component';
+import { RandomImageComponent } from './random-image.component';
 import { SafePipe } from '../safe.pipe';
 import { RouterTestingModule } from '@angular/router/testing';
 
-describe('LandscapeComponent', () => {
-  let component: LandscapeComponent;
-  let fixture: ComponentFixture<LandscapeComponent>;
+describe('RandomImageComponent', () => {
+  let component: RandomImageComponent;
+  let fixture: ComponentFixture<RandomImageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [LandscapeComponent, SafePipe],
+      declarations: [RandomImageComponent, SafePipe],
       imports: [RouterTestingModule]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LandscapeComponent);
+    fixture = TestBed.createComponent(RandomImageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

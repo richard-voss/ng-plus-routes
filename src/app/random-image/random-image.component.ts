@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'routes-landscape',
-  templateUrl: './landscape.component.html',
-  styleUrls: ['./landscape.component.scss']
+  selector: 'routes-random-image',
+  templateUrl: './random-image.component.html',
+  styleUrls: ['./random-image.component.scss']
 })
-export class LandscapeComponent implements OnInit {
+export class RandomImageComponent implements OnInit {
 
   images: string[] = [];
   image: string;
