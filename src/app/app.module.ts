@@ -8,18 +8,13 @@ import { RandomStatementComponent } from './random-statement/random-statement.co
 import { RandomGifComponent } from './random-gif/random-gif.component';
 import { SafePipe } from './safe.pipe';
 import { RandomImageComponent } from './random-image/random-image.component';
+import { WisePeopleResolverService } from './wise-people-resolver.service';
 
 
 const adviceChildren: Routes = [
   {
-    path: 'person', component: RandomImageComponent, data: {
-      images: [
-        'https://wisewomen.com.au/wp-content/uploads/2015/10/WW-Marie-Curie.jpg',
-        'https://wisewomen.com.au/wp-content/uploads/2018/01/WW-Angela-Merkel.jpg',
-        'https://memegenerator.net/img/images/300x300/10318247/mr-ts-shakespearean-wisdom.jpg',
-        'https://memegenerator.net/img/images/300x300/11776471/wisdom-dropping-confucius.jpg',
-        'https://memegenerator.net/img/images/300x300/16037641/wisdom-of-yoda.jpg'
-      ]
+    path: 'person', component: RandomImageComponent, resolve: {
+      images: WisePeopleResolverService
     }
   },
   {
