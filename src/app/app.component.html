@@ -1,5 +1,10 @@
 <mat-card>
   <h1>Welcome to Routes<ng-container *ngIf="greet">, {{greet}}</ng-container>!</h1>
 
+  <div class="links">
+    <a routerLink="gif" queryParamsHandling="preserve">gif</a>
+    <a routerLink="advice" queryParamsHandling="preserve">advice</a>
+  </div>
+
   <router-outlet></router-outlet>
 </mat-card>
