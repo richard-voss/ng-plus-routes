@@ -10,6 +10,12 @@ import { SafePipe } from './safe.pipe';
 import { WisePersonComponent } from './wise-person/wise-person.component';
 import { LandscapeComponent } from './landscape/landscape.component';
 
+
+const adviceChildren = [
+  { path: 'person', component: WisePersonComponent },
+  { path: 'landscape', component: LandscapeComponent }
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,9 +28,11 @@ import { LandscapeComponent } from './landscape/landscape.component';
   imports: [
     RouterModule.forRoot([
       { path: 'gif', component: RandomGifComponent },
-      { path: 'advice', component: RandomStatementComponent },
+      {
+        path: 'advice', component: RandomStatementComponent, children: adviceChildren
+      },
       { path: 'gif', component: RandomGifComponent, outlet: 'right' },
-      { path: 'advice', component: RandomStatementComponent, outlet: 'right' }
+      { path: 'advice', component: RandomStatementComponent, outlet: 'right', children: adviceChildren }
     ]),
     BrowserModule,
     MatCardModule,

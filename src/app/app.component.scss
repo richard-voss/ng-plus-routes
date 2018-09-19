@@ -23,6 +23,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   div {
-    flex: 1 0 50%;
+    margin:0.5rem;
+    flex: 1 0;
   }
 }
