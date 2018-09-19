@@ -6,11 +6,23 @@
   mat-card {
     flex-grow: 1;
 
-    .links {
-      margin-bottom:1rem;
-      a {
-        margin:0 1rem;
-      }
-    }
+  }
+}
+
+
+.links {
+  margin-bottom: 1rem;
+  a {
+    margin: 0 1rem;
+  }
+}
+
+
+.outlets {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  div {
+    flex: 1 0 50%;
   }
 }

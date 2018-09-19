@@ -1,10 +1,24 @@
 <mat-card>
-  <h1>Welcome to Routes<ng-container *ngIf="greet">, {{greet}}</ng-container>!</h1>
+  <h1>Welcome to Routes
+    <ng-container *ngIf="greet">, {{greet}}</ng-container>
+    !
+  </h1>
 
-  <div class="links">
-    <a routerLink="gif" queryParamsHandling="preserve">gif</a>
-    <a routerLink="advice" queryParamsHandling="preserve">advice</a>
+  <div class="outlets">
+    <div>
+      <div class="links">
+        <a routerLink="gif" queryParamsHandling="preserve">gif</a>
+        <a routerLink="advice" queryParamsHandling="preserve">advice</a>
+      </div>
+
+      <router-outlet></router-outlet>
+    </div>
+    <div>
+      <div class="links">
+        <a [routerLink]="{outlets:{right: 'gif'}}" queryParamsHandling="preserve">gif</a>
+        <a [routerLink]="{outlets:{right: 'advice'}}" queryParamsHandling="preserve">advice</a>
+      </div>
+      <router-outlet name="right"></router-outlet>
+    </div>
   </div>
-
-  <router-outlet></router-outlet>
 </mat-card>

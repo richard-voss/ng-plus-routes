@@ -22,7 +22,9 @@ import { LandscapeComponent } from './landscape/landscape.component';
   imports: [
     RouterModule.forRoot([
       { path: 'gif', component: RandomGifComponent },
-      { path: 'advice', component: RandomStatementComponent }
+      { path: 'advice', component: RandomStatementComponent },
+      { path: 'gif', component: RandomGifComponent, outlet: 'right' },
+      { path: 'advice', component: RandomStatementComponent, outlet: 'right' }
     ]),
     BrowserModule,
     MatCardModule,
