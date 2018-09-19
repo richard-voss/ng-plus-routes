@@ -20,7 +20,10 @@ import { LandscapeComponent } from './landscape/landscape.component';
     LandscapeComponent
   ],
   imports: [
-    RouterModule.forRoot([]),
+    RouterModule.forRoot([
+      {path: 'gif', component: RandomGifComponent},
+      {path: 'advice', component: RandomStatementComponent}
+    ]),
     BrowserModule,
     MatCardModule,
     MatIconModule

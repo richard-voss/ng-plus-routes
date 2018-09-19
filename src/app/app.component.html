@@ -1,7 +1,5 @@
 <mat-card>
-  <h1>Welcome to Routes</h1>
+  <h1>Welcome to Routes<ng-container *ngIf="greet">, {{greet}}</ng-container>!</h1>
 
-  <p *ngIf="greet">
-    How's it going, {{greet}}?
-  </p>
+  <router-outlet></router-outlet>
 </mat-card>
